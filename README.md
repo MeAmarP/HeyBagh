@@ -5,7 +5,7 @@ Find and Discover Visually Similar Content - Images
 Build a image search engine using deep learning techniques to find visually similar images
 
 ## Plan:
-- [ ] Image Data - We can use Caltech-101, for starters.
+- [x] Image Data - We can use Caltech-101, for starters.
 - [ ] DB - Store images and extracted features/embeddings.
 - [ ] UI - Design UI, we can start with Gradio.
 - [ ] Core - Define deep learning technique to be used for extracting user uploaded images.
@@ -16,6 +16,7 @@ TODO:
   - resize images to a uniform size
   - augmentation??
 - Model Selection and Feature Extraction
+- Benchmark all options below for SPEED and ACCURACY
   - CNN
   - Siamese Networks
   - Triplet Networks
@@ -31,3 +32,5 @@ TODO:
   - Use same pre-processing technique as used in indexing
 
 - Deployment
+- Diagrams
+  - Use `mermaid.js` for flow of the application
