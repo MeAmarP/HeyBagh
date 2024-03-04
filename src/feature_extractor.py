@@ -9,7 +9,9 @@ class FeatureExtractor_CNN:
     """
     """
     def __init__(self):
+        self.device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
         self.model = models.resnet18(weights=ResNet18_Weights.IMAGENET1K_V1)
+        self.model.to(self.device)
         self.model.eval()  # Set model to evaluation mode
 
         self.transform = transforms.Compose([
@@ -29,7 +31,8 @@ class FeatureExtractor_CNN:
             _type_: _description_
         """
         image = Image.open(image_path)
-        image_tensor = self.transform(image).unsqueeze(0)  # Add batch dimension
+        image_tensor = self.transform(image).unsqueeze(0)
+        image_tensor = image_tensor.to(self.device)
         return image_tensor
 
     def extract_features(self, image_tensor):
@@ -42,7 +45,8 @@ class FeatureExtractor_CNN:
             _type_: _description_
         """
         with torch.no_grad():
-            features = self.model(image_tensor).squeeze(0).cpu().numpy()
+            features = self.model(image_tensor).squeeze(0)
+            features = features.cpu().numpy()
         return features
 
     def cosine_similarity(self, features1, features2):
