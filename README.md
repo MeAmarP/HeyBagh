@@ -6,7 +6,7 @@ Build a image search engine using deep learning techniques to find visually simi
 
 ## Plan:
 - [x] Image Data - We can use Caltech-101, for starters.
-- [ ] DB - Store images and extracted features/embeddings.
+- [X] DB - Store images and extracted features/embeddings.
 - [ ] UI - Design UI, we can start with Gradio.
 - [ ] Core - Define deep learning technique to be used for extracting user uploaded images.
 - [ ] Metric - Define Metric for similarity.
