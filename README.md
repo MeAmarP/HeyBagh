@@ -16,8 +16,9 @@ Find and Discover Visually Similar Content - Images
   - Most of the vector index types supported by Milvus use approximate nearest neighbors search (ANNS) algorithms. 
   - Well-structured documentation with Helpful practical examples.
   - configuration used for HeyBagh
+    - im-memory index
     - Similarity Metric Type: COSINE
-    - ANN Algo: IVF_FLAT - Quantization-based index, High-speed query and Higher Recall
+    - Index Type: [IVF_FLAT](https://zilliz.com/blog/Accelerating-Similarity-Search-on-Really-Big-Data-with-Vector-Indexing#ivf_flat-improves-speed-at-the-expense-of-accuracy-and-vice-versa) - Quantization-based index, High-speed query and Higher Recall
     - Top_k: 4
 - **User Interface:**
   - Interface built with Gradio. 
