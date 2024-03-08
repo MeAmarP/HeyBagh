@@ -52,4 +52,4 @@ TODO:
 
 - Deployment
 - Diagrams
-  - Use `mermaid.js` for flow of the application
+  - Flow of the application
