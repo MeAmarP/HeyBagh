@@ -69,7 +69,7 @@ class HeyBaghMilvusClient:
         self.collection.load()
         print(f"Collection '{collection_name}' loaded into memory.")
 
-    # ! TODO Write a function for Vector and Hybrid Search
+    # ! TODO Write for Hybrid Search
     def img_search(self, img_path, feature_extractor, search_type="vector"):
         """Perform a search on the collection."""
         img_vector = [feature_extractor.preprocess_extract_feature(img_path).tolist()]
