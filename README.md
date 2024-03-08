@@ -1,7 +1,9 @@
 # HeyBagh
 Find and Discover Visually Similar Content - Images
 
-[HeyBagh](https://github.com/MeAmarP/HeyBagh/blob/ce1f3925be0a35c4a33a63d8d2c4faef217ec5a9/assets/gradio_interface.png)
+---
+![HeyBagh](https://github.com/MeAmarP/HeyBagh/blob/ce1f3925be0a35c4a33a63d8d2c4faef217ec5a9/assets/gradio_interface.png)
+
 
 ## Technicals
 - **Feature Extraction / Image embeddings:**: 
