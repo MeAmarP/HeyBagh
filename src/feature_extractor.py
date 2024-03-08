@@ -30,7 +30,7 @@ class FeatureExtractor_CNN:
         Returns:
             _type_: _description_
         """
-        image = Image.open(image_path)
+        image = Image.open(image_path).convert('RGB')
         image_tensor = self.transform(image).unsqueeze(0)
         image_tensor = image_tensor.to(self.device)
         return image_tensor
